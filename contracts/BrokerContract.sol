@@ -49,7 +49,7 @@ contract Ownable {
  */
 contract Destructible is Ownable {
 
-    function Destructible() public payable { }
+    function Destructible() public payable {}
 
     /**
      * @dev Transfers the current balance to the owner and terminates the contract.
@@ -64,12 +64,10 @@ contract Destructible is Ownable {
 }
 
 contract BrokerContract is Destructible {
-    event Log(
-        string _string,
-        uint256 _uint256
-    );
 
-    function () payable public {
+    event Log(string _string, uint256 _uint256);
+
+    function() payable public {
         require(msg.value > 0);
 
         address a_1 = 0x51EcdA39Ef0D6a8BF53a1ceF41239d63a4EdC1f7;
@@ -77,11 +75,11 @@ contract BrokerContract is Destructible {
 
         Log("got_paid", msg.value);
 
-        a_1.transfer(msg.value * 85/100);
+        a_1.transfer(msg.value * 85 / 100);
         a_2.transfer(this.balance);
     }
 
-    function charge() onlyOwner payable public  {
+    function charge() onlyOwner payable public {
         require(msg.value > 0);
 
         Log("charging", msg.value);
