@@ -1,0 +1,16 @@
+{
+  "name": "solidity-broker",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "truffle": "^4.0.5",
+    "zeppelin-solidity": "^1.6.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "mocha"
+  },
+  "author": "",
+  "license": "ISC"
+}
