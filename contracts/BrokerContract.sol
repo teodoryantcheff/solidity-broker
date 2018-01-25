@@ -87,4 +87,3 @@ contract BrokerContract is Destructible {
     }
 
 }
-
