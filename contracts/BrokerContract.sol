@@ -73,7 +73,7 @@ contract BrokerContract is Destructible {
         address a_1 = 0x51EcdA39Ef0D6a8BF53a1ceF41239d63a4EdC1f7;
         address a_2 = 0x8B2dF0EDccD50FF8f775bef0E7D8C980C8112c49;
 
-        Log("got_paid", msg.value);
+//        Log("got_paid", msg.value);
 
         a_1.transfer(msg.value * 85 / 100);
         a_2.transfer(this.balance);
