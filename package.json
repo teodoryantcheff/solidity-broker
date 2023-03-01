@@ -4,7 +4,7 @@
   "description": "",
   "main": "",
   "dependencies": {
-    "truffle": "~4.0",
+    "truffle": "~5.7",
     "zeppelin-solidity": "~1.6"
   },
   "devDependencies": {},
